@@ -18,18 +18,17 @@
         .text-green{color: #69b99d !important;}
         .bg-green{background-color: #69B99D;}
         .box-shadow{box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);}
-        .text-position{position: absolute; top: 26%; left: 50%; width: 30rem;}
-        .relative{position: relative;}
+        .absolute{left: 70%}
         .font-bebas{font-family: 'Bebas Neue', cursive;}
-        .separador{width: 100px; height: 2px; background-color: #69B99D;}
-        
+        .list{list-style: none;}
+        .link{text-decoration: none !important;}
     </style>
 </head>
 <body class="bg-light">
     <nav class="navbar navbar-expand-lg navbar-light bg-light box-shadow">
         <div class="container-fluid">
             <a class="navbar-brand text-green text-bold" href="#">
-                <Img src="img/logo_by_bike.png" alt="logo by bike" width="80"></Img>
+                <Img src="img/by-bike-logo.png" alt="logo by bike" width="80"></Img>
             </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -56,30 +55,31 @@
           </div>
         </div>
     </nav>
-    <div class="relative">
+    <div class="position-relative">
         <div>
-            <img src="img/bike-3-1.png" alt="" class="img-fuid img-responsive" width="100%">
+            <img src="https://bybike.netlify.app/img/bike-3-1.png" alt="" class="img-fuid img-responsive" width="100%">
         </div>
-        <div class="text-position">
-            <h3 class="text-white display-6 font-bebas">TRABALHE DE</h3>
-            <div class="align-items-center sm-row">
-                <h3 class="text-green display-6 font-bebas">BIKE</h3>
-                <button class="btn btn-green text-white mb-4">Saiba mais</button>
-            </div>
-
+        <div class="sm-visually-hidden position-absolute top-50 translate-middle absolute">
+            <h3 class="text-white display-6 font-bebas">TRABALHE DE <span class="text-green">BIKE</span></h3>
+            <button class="btn btn-green text-white mb-4 d-none d-md-block">Saiba mais</button>
+            <p class="text-white d-none d-md-block">No By Bike incentivamos as pessoas a trocarem o transporte convencional
+              pela bicicleta.
+            </p>
         </div>
     </div>
     <!--CARDS-->
     <div>
         <h3 class="display-6 text-green text-center my-4">O que fazemos</h3>
-        </div>
+    </div>
     <div class="row row-cols-1 row-cols-md-3 g-4 container mx-auto">
         <div class="col">
           <div class="card h-100 box-shadow">
             <img src="https://image.freepik.com/free-vector/flat-people-doing-outdoor-activities_23-2149011517.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title text-green">Quem somos</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">A By Bike faz parte do movimento move by bike que incentiva as pessoas
+                  a utilizarem a bicicleta como meio de transporte. Desse modo, cuidamos da sua saúde e do meio ambiente.
+              </p>
             </div>
           </div>
         </div>
@@ -88,7 +88,9 @@
             <img src="https://image.freepik.com/free-vector/healthy-lifestyle-parents-children-doing-sport-together-cycling-experiences-family-bike-walks-best-bike-trails-modern-cycling-gears-concept-pinkish-coral-bluevector-isolated-illustration_335657-1508.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title text-green">Dia mundial da bicicleta</h5>
-              <p class="card-text">This is a short card.</p>
+              <p class="card-text">O dia 3 de junho é o dia mundial da bicicleta. Neste dia, é incentivado o 
+                  uso da bicicleta como meio de transporte, queremos também chamar a atenção para os direitos dos ciclistas.
+              </p>
             </div>
           </div>
         </div>
@@ -96,15 +98,47 @@
           <div class="card h-100 box-shadow">
             <img src="https://image.freepik.com/free-vector/organic-flat-world-bicycle-day-illustration_23-2148940202.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title text-green">Vida saudável</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              <h5 class="card-title text-green">Transporte saudável</h5>
+              <p class="card-text">Além de ser utilizada como meio de lazer e atividade física regular, o ciclismo é um grande aliado na hora de se locomover
+                  pela cidade sendo também um grande aliado do meio ambiente.
+              </p>
             </div>
           </div>
         </div>
       </div>
+      <!--CONTATO-->
+      <div>
+        <h3 class="display-6 text-green text-center my-4">Contato</h3>
+      </div>
+      <div class="container">
+        <div class="row d-flex justify-content-between">
+          <div class="col-md-4 my-4">
+            <h3>Entre em contato com a gente!</h3>
+            <p>Entre em contato com a By Bike queremos tirar suas dúvidas ouvir suas críticas e sugestões</p>
+            <button class="btn btn-green text-white"><i class="bi bi-whatsapp"></i> Entrar em contato</button>
+          </div>
+          <div class="col-lg-7 mb-5">
+            <form class="bg-light rounded p-4 box-shadow">
+                <div class="form-group mb-3">
+                  <label for="clienteNome" class="form-label">Nome</label>
+                  <input type="text" class="form-control" id="inputClienteNome">
+                </div>
+                <div class="form-group mb-3">
+                  <label for="clienteEmail" class="form-label">E-mail</label>
+                  <input type="email" class="form-control" id="inputClienteEmail">
+                </div>
+                <div class="form-group mb-3">
+                    <label for="clienteMensagem" class="form-label">Mensagem</label>
+                    <textarea class="form-control" id="clienteMensagem"></textarea>
+                </div>
+                <button type="submit" class="btn btn-secondary">Enviar Mensagem</button>
+              </form>
+        </div>
+        </div>
+      </div>
       <!--Carrossel-->
-      <section class="container-fluid my-5">
-        <div class="row bg-green text-white">
+      <section class="container-fluid">
+        <div class="row bg-green text-white my-5">
             <div class="col-lg-7 p-0">
                 <div id="carouselCidades" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
@@ -116,19 +150,19 @@
                       <div class="carousel-item active">
                         <img src="https://image.freepik.com/free-photo/cheerful-stylish-black-european-male-businessman-using-bicycle-get-office-while-his-car-is-broken-cycling-urban-setting-passing-by-modern-buildings-fountain-sunny-summer-day_273609-1176.jpg" class="d-block w-100" alt="California">
                         <div class="carousel-caption d-md-block">
-                          <h5 class="display-4">Para todas as horas</h5>
+                          <h5 class="display-4"></h5>
                         </div>
                       </div>
                       <div class="carousel-item">
                         <img src="https://image.freepik.com/free-photo/young-african-man-morning-with-bicycle-talking-by-phone_171337-12952.jpg" class="d-block w-100" alt="Paris">
                         <div class="carousel-caption d-md-block">
-                          <h5 class="display-4">Diversão e saúde</h5>
+                          <h5 class="display-4"></h5>
                         </div>
                       </div>
                       <div class="carousel-item">
                         <img src="https://image.freepik.com/free-photo/handsome-hipster-style-bearded-man-working-online-freelancer-laptop-with-backpack-bicycle-morning-sunrise-by-sea-healthy-active-lifestyle-traveler-backpacker_285396-5461.jpg" class="d-block w-100" alt="Dublin">
                         <div class="carousel-caption d-md-block">
-                          <h5 class="display-4">Viva momentos</h5>
+                          <h5 class="display-4"></h5>
                         </div>
                       </div>
                     </div>
@@ -142,7 +176,7 @@
                     </button>
                   </div>
             </div>
-            <div class="col-lg-5 py-5 align-self-center ">
+            <div class="col-lg-5 py-5 align-self-center">
                 <h1 class="display-6 p-4 font-bebas">Assine nossa newsletter</h1>
                 <p class="lead">Conheça mais sobre os benefícios de usar a bike e participe do nosso clube de apoiadores.</p>
                 <form action="">
@@ -154,9 +188,41 @@
             </div>
         </div>       
     </section>
-    <section class="bg-dark">
-
+    <section class="bg-dark d-flex justify-content-around">
+        <div class="container p-3">
+            <div class="row">
+                <div class="col-md-4 text-white">
+                    <h4>Contato</h4>
+                    <ul class="list">
+                        <li>Rua Antônio - São José dos Campos</li>
+                        <li>Telefone: (12) 99999-9999</li>
+                        <li>contato@bybike.com.br</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-white">
+                    <h4>Navegue pelo site</h4>
+                    <ul class="list">
+                      <li><a href="#" class="text-decoration-none text-white">HOME</a></li>
+                      <li><a href="#" class="text-decoration-none text-white">SOBRE</a></li>
+                      <li><a href="#" class="text-decoration-none text-white">GALERIA</a></li>
+                      <li><a href="#" class="text-decoration-none text-white">JUNTE-SE A NÓS</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-white">
+                    <h4>Redes Sociais</h4>
+                    <ul class="list-unstyled d-flex d-flex-row">
+                        <li class="m-2"><a><i class="bi bi-whatsapp"></i></a></li>
+                        <li class="m-2"><a><i class="bi bi-facebook"></i></a></li>
+                        <li class="m-2"><a><i class="bi bi-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <footer class="bg-green text-center text-white mb-0 p-2">
+        <p>2021 - Cléo Silva - SoulCode Academy</p>
+    </footer>
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
